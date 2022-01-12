@@ -14,6 +14,7 @@ for (let pokemon of pokemons) {
   let cardTopTextContent = document.createElement("div");
   let cardTopTextContentBox = document.createElement("div");
   let cardTopTitle = document.createElement("h5");
+  let btnIconClick = document.createElement("button");
   let cardIcon = document.createElement("img");
   let cardTopDesc = document.createElement("p");
   let cardBottomTextContent = document.createElement("div");
@@ -30,7 +31,8 @@ for (let pokemon of pokemons) {
   cardTopTextContent.setAttribute("class", "top-text-content");
   cardTopTextContentBox.setAttribute("class", "top-text-content-box");
   cardTopTitle.setAttribute("class", "card-top-title");
-  cardIcon.setAttribute("src", "./img/heart.svg");
+  btnIconClick.setAttribute("class", "btn-click bg-transparent");
+
   cardTopDesc.setAttribute("class", "card-top-desc");
   cardBottomTextContent.setAttribute("class", "card-bottom-text-content");
   cardBottomText.setAttribute("class", "card-bottom-text");
@@ -52,12 +54,17 @@ for (let pokemon of pokemons) {
   cardTextWrapper.appendChild(cardTopTextContent);
   cardTopTextContent.appendChild(cardTopTextContentBox);
   cardTopTextContentBox.appendChild(cardTopTitle);
-  cardTopTextContentBox.appendChild(cardIcon);
+  cardTopTextContentBox.appendChild(btnIconClick);
+  btnIconClick.appendChild(cardIcon);
   cardTopTextContent.appendChild(cardTopDesc);
   cardTextWrapper.appendChild(cardBottomTextContent);
   cardBottomTextContent.appendChild(cardBottomText);
   cardBottomTextContent.appendChild(cardBottomDescText);
   cardTextWrapper.appendChild(newDesc);
+
+  btnIconClick.onclick = function () {
+    btnIconClick.classList.toggle("active-icon-hearts");
+  };
 
   //   cardTextWrapper.appendChild(cardTopTextContent);
   //   cardTextWrapper.appendChild(cardBottomTextContent);
