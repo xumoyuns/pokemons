@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+body {
+  background-color: #ffd845;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.site-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.site-logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  width: 610px;
+  height: 225px;
+}
+.site-top-icon {
+  margin-top: 50px;
+  width: 50px;
+  height: 50px;
+}
+/* inputs with */
+.inputs-box {
+  width: 260px;
+}
+.inputs-button {
+  width: 200px;
+  margin-left: 35px;
+}
+.inputs-box-search {
+  margin-left: 35px;
+  width: 300px;
+}
+.pokemons-array-results {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* .card-text-content:hover {
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  border: 2px solid #111;
+  transition: 0.5s linear;
+} */
+
+.top-text-content-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: -15px !important;
+}
+.card-items {
+  background-color: #fff;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  width: 300px;
+  margin: 15px !important;
+  transition: 1s ease;
+}
+.card-items:hover {
+  box-shadow: rgba(50, 50, 93, 0.75) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.75) 0px 18px 36px -18px inset;
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  transition: 1s ease;
+}
+.card-text-content {
+  display: flex;
+  flex-direction: column;
+}
+.cards-img {
+  width: 157px;
+  height: 157px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 68px;
+}
+.text-wrapper {
+  border-top: 2px solid #000;
+  margin: 0;
+  padding: 20px 30px 0 30px;
+}
+/* .card-text-content-top {
+  border-top: 2px solid #000;
+  margin: 0 !important;
+} */
+.card-desc {
+  margin: 0;
+}
+
+.card-bottom-text-content {
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.card-top-title {
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.card-icon {
+  width: 30px;
+  height: 30px;
+}
+.card-top-desc {
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+.card-bottom-text-content {
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: -30px;
+  margin-bottom: 10px;
+}
+.card-bottom-text {
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+.subtitle-desc {
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 1px;
+  margin-bottom: 37px;
+}
