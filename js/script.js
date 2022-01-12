@@ -32,7 +32,6 @@ for (let pokemon of pokemons) {
   cardTopTextContentBox.setAttribute("class", "top-text-content-box");
   cardTopTitle.setAttribute("class", "card-top-title");
   btnIconClick.setAttribute("class", "btn-click bg-transparent");
-
   cardTopDesc.setAttribute("class", "card-top-desc");
   cardBottomTextContent.setAttribute("class", "card-bottom-text-content");
   cardBottomText.setAttribute("class", "card-bottom-text");
@@ -62,10 +61,8 @@ for (let pokemon of pokemons) {
   cardBottomTextContent.appendChild(cardBottomDescText);
   cardTextWrapper.appendChild(newDesc);
 
+  // hearts bosilganda uni active holatga o`tkazuchi funksiya
   btnIconClick.onclick = function () {
     btnIconClick.classList.toggle("active-icon-hearts");
   };
-
-  //   cardTextWrapper.appendChild(cardTopTextContent);
-  //   cardTextWrapper.appendChild(cardBottomTextContent);
 }
